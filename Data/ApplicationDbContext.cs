@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CSAddressBookMVC.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace CSAddressBookMVC.Data
         {
         }
 
+
+        public DbSet<Contact> Contacts { get; set; } //same
     }
 
 }
